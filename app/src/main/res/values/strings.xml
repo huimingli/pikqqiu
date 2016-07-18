@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Template</string>
+    <string name="estation_free_apply_already_apply_tv">已申请</string>
+    <string name="estation_free_apply_default_content">未知</string>
+    <string name="estation_free_apply_default_date">2016.7.11.11.55</string>
+    <string name="estation_free_apply_default_num">0人已申请</string>
+</resources>

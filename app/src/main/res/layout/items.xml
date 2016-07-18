@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="127dp"
+   >
+
+    <RelativeLayout
+        android:layout_marginTop="11dp"
+        android:id="@+id/estation_apply_item_top"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="19dp"
+        android:layout_height="17dp">
+
+        <TextView
+             android:textSize="14sp"
+            android:textColor="#ffbc5c"
+            android:id="@+id/tv_estation_apply_or_not"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:textColor="#8f8e94"
+            android:textSize="12sp"
+            android:layout_marginRight="0dp"
+            android:id="@+id/tv_estation_apply_date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+             />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="23dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="20dp" 
+        android:layout_marginBottom="14dp"
+        android:layout_below="@id/estation_apply_item_top"
+        android:orientation="horizontal">
+<!-- com.android.volley.toolbox.NetworkImageView -->
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/iv_estation_apply_good_portrait"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+
+            />
+
+        <RelativeLayout
+            
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+           >
+
+            <TextView
+                android:textSize="15sp"
+                android:textColor="#262626"
+                android:id="@+id/tv_estation_apply_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                 />
+
+            <TextView
+                android:id="@+id/tv_estation_apply_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:ellipsize="end"
+               android:textSize="13sp"
+               android:textColor="#ffbc5c"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

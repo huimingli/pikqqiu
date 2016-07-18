@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    app:cardBackgroundColor="#ffffff"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="2dp"
+    app:cardCornerRadius="5dp"
+    app:elevation="2dp"
+     >
+
+
+    <RelativeLayout
+        android:layout_marginTop="11dp"
+        android:id="@+id/estation_apply_item_top"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="19dp"
+        android:layout_height="21dp">
+
+        <TextView
+             android:textSize="14sp"
+            android:textColor="#ffbc5c"
+            android:id="@+id/tv_estation_apply_or_not"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:textColor="#8f8e94"
+            android:textSize="12sp"
+            android:layout_marginRight="0dp"
+            android:id="@+id/tv_estation_apply_date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+             />
+    </RelativeLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:background="#CDCDCD"
+    android:layout_marginTop="30dp"
+    android:layout_below="@id/estation_apply_item_top"
+    />
+    <LinearLayout
+        android:layout_marginTop="36dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="20dp" 
+        android:layout_below="@id/estation_apply_item_top"
+        android:orientation="horizontal">
+<!-- com.android.volley.toolbox.NetworkImageView -->
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/iv_estation_apply_good_portrait"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+
+            />
+
+        <RelativeLayout
+            
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="0dp"
+           >
+
+            <TextView
+                android:textSize="15sp"
+                android:textColor="#262626"
+                android:id="@+id/tv_estation_apply_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:ellipsize="end"
+                 />
+
+            <TextView
+                android:id="@+id/tv_estation_apply_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+
+               android:textSize="13sp"
+               android:textColor="#ffbc5c"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
